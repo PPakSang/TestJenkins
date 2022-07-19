@@ -38,7 +38,7 @@ public class MemberService {
         return memberRepository.findAll();
     }
 
-    public Member findMember(Long memberId) {
-        return memberRepository.findOne(memberId);
-    }
+//    public Member findMember(Long memberId) {
+//        return memberRepository.findOne(memberId);
+//    }
 }
