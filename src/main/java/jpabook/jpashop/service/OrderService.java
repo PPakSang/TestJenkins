@@ -41,7 +41,7 @@ public class OrderService {
 
         Order order = Order.createOrder(member, delivery, orderItem);
 
-        orderRepository.save(order);
+//        orderRepository.save(order);
 
         return order.getId();
     }
