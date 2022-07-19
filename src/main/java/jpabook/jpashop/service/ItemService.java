@@ -26,7 +26,7 @@ public class ItemService {
         Item findItem = itemRepository.findOne(itemId);
         findItem.setPrice(param.getPrice());
         findItem.setName(param.getName());
-//        findItem.setStockQuantity(param.getStockQuantity());
+        findItem.setStockQuantity(param.getStockQuantity());
 
         //변경 감지 사용
 
