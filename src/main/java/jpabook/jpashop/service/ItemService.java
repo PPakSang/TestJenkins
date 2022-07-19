@@ -25,7 +25,7 @@ public class ItemService {
     public void updateItem(Long itemId, Book param) {
         Item findItem = itemRepository.findOne(itemId);
         findItem.setPrice(param.getPrice());
-//        findItem.setName(param.getName());
+        findItem.setName(param.getName());
 //        findItem.setStockQuantity(param.getStockQuantity());
 
         //변경 감지 사용
