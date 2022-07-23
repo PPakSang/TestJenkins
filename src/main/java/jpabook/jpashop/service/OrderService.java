@@ -41,17 +41,17 @@ public class OrderService {
 
         Order order = Order.createOrder(member, delivery, orderItem);
 
-//        orderRepository.save(order);
+        orderRepository.save(order);
 
         return order.getId();
     }
 
     //취소
-//    @Transactional
-//    public void cancelOrder(Long orderId) {
-//        Order order = orderRepository.findOne(orderId);
-//        order.cancel();
-//    }
+    @Transactional
+    public void cancelOrder(Long orderId) {
+        Order order = orderRepository.findOne(orderId);
+        order.cancel();
+    }
 
     //검색
     public List<Order> findOrders(OrderSearch orderSearch) {
