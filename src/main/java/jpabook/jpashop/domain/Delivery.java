@@ -16,7 +16,7 @@ public class Delivery {
     @OneToOne(mappedBy = "delivery" ,fetch = FetchType.LAZY)
     private Order order;
 
-    private String TestItem;
+    private String LeeJaeHan;
 
     private Address address;
 
